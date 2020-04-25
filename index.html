@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Carousel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap" rel="stylesheet">    <!-- Custom CSS -->
+
+  </head>
+
+  <body>
+    <section>
+      <div class="home">
+          <div class="slide" style="background-image: url('Images/carousel.jpg')">
+            <div class="container">
+                <div class="textbox1">
+                  <p>Hey</p>
+                </div>
+            </div>
+          </div>
+
+          <div class="slide moveRightCurrentSlide" style="background-image: url('Images/ocean.jpg')">
+            <div class="container">
+                <div class="textbox1">
+                  <p>How you</p>
+                </div>
+            </div>
+          </div>
+
+          <div class="slide moveRightCurrentSlide" style="background-image: url('Images/image9.jpg');">
+            <div class="container">
+              <div class="textbox1">
+                <p>dooooin'?</p>
+                <img src="https://i.pinimg.com/474x/5e/f9/1e/5ef91ec883c41d8c8d4a33da499e120d.jpg">
+              </div>
+          </div>
+          </div>
+        </div>  
+
+          <!-- controls -->
+
+          <div id="playPause" onclick="playPauseSlides()">
+            <div id="play"><a>PLAY</a></div>
+            <div id="pause"><a >PAUSE</a></div>
+          </div>
+          <div onclick="plusSlides(-1)" class="nextPrevBtn leftArrow"><a class="arrowLeft">&#10094;</a></div>
+          <div onclick="plusSlides(1)" class="nextPrevBtn rightArrow"><a class="arrowRight">&#10095;</a></div>          
+       
+    </section>
+
+<script src="app.js"></script>
+
+</body>
+
+</html>
